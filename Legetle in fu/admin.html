@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理后台 - Minecraft服务器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Minecraft服务器</div>
+            <div class="nav-items">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="admin.html" class="nav-link">管理后台</a>
+                <a href="#" class="nav-link">商品分类</a>
+                <a href="#" class="nav-link">购物车</a>
+                <a href="#" class="nav-link">我的账户</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>管理后台</h1>
+        <div class="admin-container">
+            <h2>商品管理</h2>
+            <form id="productForm" class="product-form">
+                <input type="text" id="productName" placeholder="商品名称" required>
+                <input type="number" id="productPrice" placeholder="商品价格" required>
+                <input type="url" id="productImage" placeholder="商品图片链接" required>
+                <button type="submit">添加商品</button>
+            </form>
+            <button id="clearButton">清空商品列表</button>
+            <div id="successMessage" style="color: green;"></div>
+            <div id="productList">
+                <h3>现有商品</h3>
+                <ul id="existingProducts" class="product-list"></ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Minecraft服务器 - 管理后台</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html> 
